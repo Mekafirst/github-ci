@@ -16,7 +16,7 @@ jobs:
 
       - name: Set up Python
         run:
-          sudo apt-get update && sudo apt-get install -y python3 python3-pip
+          apt-get update && apt-get install -y python3 python3-pip
 #        uses: actions/setup-python@v2
 #        with:
 #          python-version: '3.11.9'
@@ -27,7 +27,7 @@ jobs:
           pip install -r ./requirements.txt
 
       - name: Start Backend Server
-        run: uvicorn main:app --reload &
+        run: uvicorn app.main:app --reload &
 
       - name: Test with pytest
         run: |
