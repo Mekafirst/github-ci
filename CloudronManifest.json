@@ -15,6 +15,5 @@
   "manifestVersion": 2,
   "website": "https://www.example.com",
   "contactEmail": "support@clourdon.io",
-  "icon": "file://icon.png",
-  "tags": [ "test", "collaboration" ]
+   "tags": [ "test", "collaboration" ]
 }
